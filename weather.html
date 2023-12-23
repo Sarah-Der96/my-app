@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Roboto&display=swap" rel="stylesheet">
+    <title>My Weather Application</title>
+    <style>
+      body{
+        display: block;
+        margin: 8px;
+        background: #F9F7FE;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+      }
+            
+       button {
+        right: 0;
+        top: 50%;
+        font-size: 15px;
+        padding: 15px;
+        margin:5px;
+        color: white;
+        background: #885DF1;
+        border: none;
+        border-radius: 5px;
+      }
+      p {
+        color: rgba(39, 33, 66, 0.4);
+        font-weight: 400;
+        opacity: 1;
+      }
+      footer{
+        color: rgba(39, 33, 66, 0.4);
+        font-weight: 400;
+        opacity: 1;  
+        padding: 20px;   
+        margin: 10px;
+      }
+      hr {
+        border-color:rgba(39, 33, 66, 0.4) ;
+        opacity: 0.2;
+        border-width: 0.5px;
+      }
+
+      .current strong{
+        color:#f65282;
+      }
+
+      .container{
+       max-width: 700px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      #query {
+        padding:15px;
+        margin: 10px;
+        background:#F9F7FE ;
+        border-radius: 10px;
+        border: none;
+        font-size: 15px;
+        width: 75%;
+        
+      }
+      .today{
+        position: relative;
+        right: -500px;
+        top: -70px;
+      }
+     .today-icon{
+      font-size: 48px ;
+     }
+     .today-temp{
+      font-size: 80px;
+     }
+     .today-unit{
+      font-size: 28px;
+      position: relative;
+     }
+     
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <header><form class="searchBar">
+      <input type="search" id="query" name="q" placeholder="Enter a city" />
+      <button>Search</button>
+    </form></header>
+    <hr>
+    <main><h1>San Francisco</h1>
+    <p class="current">
+      <span> Sunday 10:58, clear sky </span><br />
+      Humidity: <strong>31%</strong>, Wind: <strong>4.02km/h</strong></span
+      >
+      <div class="today"><span class="today-icon">⛅</span> <strong> <span class="today-temp">13</span></strong><span class="today-unit"> °C</span></div>
+    </p>
+   
+    </main>
+    <hr>
+    <footer> This project was coded by <a href= "https://www.linkedin.com/in/sarah-dermody-5a75aa235" target="_blank" class="name">Sarah Dermody</a> and is <a href= "https:www.github.com" target="_blank" class="github">open sourced on GitHub</a> and <a href= "https: www.netlify.com" target= "_blank" class="netlify">hosted on Netlify</a></footer>
+</div>
+  </body>
+</html>
